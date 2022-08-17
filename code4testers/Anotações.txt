@@ -1,2 +1,11 @@
-próxima aula Váriaveis e TIpos
+Variáveis e Tipos
+No ruby a tipagen das variaveis só submetida quando é passado o valor.
+exemplo: nome = "fernando" automaticamente entende-se que a variavel é varchar.
+
+-----------------------
+métodos 
+são procedimento criados para instruções da linguagem.
+-----------------------
+Operadores Parte 2
+
 
