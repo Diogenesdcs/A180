@@ -9,7 +9,7 @@ end
 subtrai(10, 3)
 
 def multiplica(n1, n2)
-    puts n1 * n2
+    puts n1 * n2s
 end 
 multiplica(10, 3)
 
