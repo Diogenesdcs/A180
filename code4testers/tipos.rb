@@ -1,5 +1,5 @@
 
-nome = "Fernando"
+nome = "Fernando" #variavel 
 idade = 37
 legal = true
 
