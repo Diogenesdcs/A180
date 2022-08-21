@@ -7,5 +7,23 @@ métodos
 são procedimento criados para instruções da linguagem.
 -----------------------
 Operadores Parte 2
+-----------------------
+Controles de fluxos IF ELSE ELSIF
+Esses IF são bloco de códicos que tem condcionais dentro se o valor da condicional retornar verdadeiro 
+ele executa o bloco e código se não retornar verdadeiro ele executa outro código.
 
+------------------------
+Gets = comando de entrada de dados no ruby
+Chomp = quebra de linha 
 
+-------------------------
+Interpolação de strings 
+Exemplos:
+10 + 10 = 20 Soma de operadores
+"10" + "10" "1010" concatenação de strings
+10 + "10 " = não permite concatenar inteiro com string
+#{variavel string} com interpolação.
+
+-------------------------
+Arrays = guarda estrutras de armazenamento (string ou variavel) de dados em sequência, capaz de ofercer metodos.
+hashes = guarda estrutras de armazenamento associativos com conjuntos de dados em uma única variavel.
