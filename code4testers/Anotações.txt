@@ -27,3 +27,7 @@ Exemplos:
 -------------------------
 Arrays = guarda estrutras de armazenamento (string ou variavel) de dados em sequência, capaz de ofercer metodos.
 hashes = guarda estrutras de armazenamento associativos com conjuntos de dados em uma única variavel.
+-------------------------
+Loops Times
+Loops each
+
