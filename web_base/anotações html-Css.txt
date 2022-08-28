@@ -1,0 +1,7 @@
+o que é o CSS
+serve para encontrar elementos no html e hostilizar customizações
+como classes, tamanho imagem, propriedades e etc.
+
+Style: estilo e ormatação da pagina com CSS
+
+.table busca a classe CSS dentro do html para realizar a customização.

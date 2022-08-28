@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> WebBase from QA Ninja</title>
+    <!--Titulo da página.-->
+    <script src="js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!--definição da DIV principal app-->
+        <h1> Aqui vai um titulo em HTML</h1>
+        <!--Titulo do -->
+        <p>Cadastro de Alunos.</p>
+        <!--paragrafo-->
+
+        <form>
+            <!--Formulario-->
+            <label for="nomeCompleto">Nome Completo</label>
+            <!--Label do campo name. for que faz o vinculo dos campos-->
+            <input name="NomeCompleto" type="text">
+            <!--função name, tipo de entrada de dados texto-->
+
+            <label for="email">Email</label>
+            <input name="Email" type="text">
+
+            <label for="Nota">Nota </label>
+            <input name="Nota" type="text">
+
+            <input type="button" value="Cadastrar">
+            <!--Entrada tipo botão valor Cadastro-->
+
+        </form>
+
+        <div>
+            <!--div= divisão da estrutura do código-->
+            <table class="table">
+                <!--tabela + class do css selector-->
+                <thead>
+                    <!--linhas da tabela-->
+                    <th>Nome</th> <!-- <th> colunas-->
+                    <th>Email</th>
+                    <th>Nota</th>
+                </thead>
+
+                <tbody>
+                    <!--corpo das colunas-->
+                    <tr>
+                        <!--linhas das tabelas-->
+                        <td>Fernando </td>
+                        <td>fernando@gmail.com </td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <!--linhas das colunas-->
+                        <td>Débora </td>
+                        <td>debora@gmail.com </td>
+                        <td>100</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app"
+        })
+
+    </script>
+    <!--vinculo do script js com a div principal do html-->
+
+    <style>
+        .table {
+            /*busca a classe css no html para customizar o html*/
+            margin-top: 20px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .table th,
+        .table td {
+            border-top: 1px solid #ccc;
+        }
+
+        input {
+            display: block
+        }
+        /*--colocando elementos por linhas um embaixo do outro do display*/
+
+        input[type="button"] {
+            background-color: crimson;
+            border-color: crimson;
+            margin-top: 10px;
+            color: #eee
+        }
+        /*input do tipo botão no topo. movendo o botão cadastrar para baixo
+        e customização de cores*/
+
+    </style>
+</body>
+
+</html>
