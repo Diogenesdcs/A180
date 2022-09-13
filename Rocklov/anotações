@@ -1,0 +1,9 @@
+Gemfile: arquivo para de configuração do pj aplicações
+Gem: frameworks e versões.
+env.rb: importação dos módulos dos frameworks e bibliotecas para o projeto.
+Rspec: linguagem de programação Ruby para testar o código Rub
+Faker: Gerador de massa de dados faker. para acessar informações das bibliotecas gems ruby faker
+clicar area de links home page -> https://github.com/faker-ruby/faker generator ->default . não esquecer de importar 
+dentro do arquivo env.rb
+
+formulario de cadastro parte 3

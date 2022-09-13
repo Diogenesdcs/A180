@@ -29,8 +29,8 @@
             <label for="Nota">Nota </label>
             <input name="Nota" type="text">
 
-            <input type="button" value="Cadastrar">
-            <!--Entrada tipo botão valor Cadastro-->
+            <input type="button" value="Cadastrar" @click ='adicionarContato'>
+            <!--Entrada tipo botão valor Cadastro click da função colocadadentro do metodo no js-->
 
         </form>
 
@@ -67,12 +67,37 @@
 
     </div>
     <script>
-        var app = new Vue({
-            el: "#app"
+        var app = new Vue({      /*ativa o vue js com o html*/ < !--vinculo do script js com a div principal do html-- >
+            el: "#app",
+                data: {             /*recebe dados*/
+            form: {          /*cria um ormulário*/
+                nome: '',
+                    email: '',
+                        nota: ''
+            },
+            alunos: [        /*array do formulario*/
+                { nome: 'Fernando', email: 'fernando@gmail.com', nota: 10 },
+                { nome: 'Débora', email: 'Débora@gmail.com', nota: 10 },
+                { nome: 'João', email: 'João@gmail.com', nota: 10 }
+            ]
+
+        },
+        methods: {  /*método e adicionar informações*/
+            limpaFormulario: function () {
+                this.form = {
+                    nome: '',
+                    email: '',
+                    nota: ''
+                },
+                  adicionarContato: function() { /*função*/
+                        /*console.log(this.form) /*this.form obtem aceso aos dados do forms*/
+                        this.alunos.push(this.form)
+                        this.limpaFormulario()
+                    }
+            }
         })
 
     </script>
-    <!--vinculo do script js com a div principal do html-->
 
     <style>
         .table {
@@ -90,6 +115,7 @@
         input {
             display: block
         }
+
         /*--colocando elementos por linhas um embaixo do outro do display*/
 
         input[type="button"] {
@@ -98,9 +124,9 @@
             margin-top: 10px;
             color: #eee
         }
+
         /*input do tipo botão no topo. movendo o botão cadastrar para baixo
         e customização de cores*/
-
     </style>
 </body>
 
