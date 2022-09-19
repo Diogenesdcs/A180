@@ -6,14 +6,15 @@ Faker: Gerador de massa de dados faker. para acessar informações das bibliotec
 clicar area de links home page -> https://github.com/faker-ruby/faker generator ->default . não esquecer de importar 
 dentro do arquivo env.rb
 Mongo: banco de dados 
-Pasta Libs usada para classes criadas no projeto.
+Pasta Libs: usada para classes criadas no projeto.
 
 --Instalando banco de dados robo 3t
 	baixar a versão free e instalar a mesma porta de servidor e banco de dados do servidor virtual.
     instalar a biblioteca do mongo e pegar o comando dentro das configurações do mongo e colar no código ruby pelo link
     https://www.mongodb.com/docs/ruby-driver/current/tutorials/quick-start/
 
+    funcão de ligação com o banco
     You can also use a URI connection string:
     client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
-
 --
+Argumentos do cucumber
