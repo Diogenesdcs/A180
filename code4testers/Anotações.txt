@@ -5,6 +5,10 @@ exemplo: nome = "fernando" automaticamente entende-se que a variavel é varchar.
 -----------------------
 métodos 
 são procedimento criados para instruções da linguagem.
+Argumentos: Um argumento representa o valor que você passa para um parâmetro de procedimento, quando você chama o procedimento
+
+Classe:Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto
+
 -----------------------
 Operadores Parte 2
 -----------------------

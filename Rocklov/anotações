@@ -1,9 +1,19 @@
-Gemfile: arquivo para de configuração do pj aplicações
+Gemfile: arquivo para configuração do pj aplicações
 Gem: frameworks e versões.
 env.rb: importação dos módulos dos frameworks e bibliotecas para o projeto.
 Rspec: linguagem de programação Ruby para testar o código Rub
 Faker: Gerador de massa de dados faker. para acessar informações das bibliotecas gems ruby faker
 clicar area de links home page -> https://github.com/faker-ruby/faker generator ->default . não esquecer de importar 
 dentro do arquivo env.rb
+Mongo: banco de dados 
+Pasta Libs usada para classes criadas no projeto.
 
-formulario de cadastro parte 3
+--Instalando banco de dados robo 3t
+	baixar a versão free e instalar a mesma porta de servidor e banco de dados do servidor virtual.
+    instalar a biblioteca do mongo e pegar o comando dentro das configurações do mongo e colar no código ruby pelo link
+    https://www.mongodb.com/docs/ruby-driver/current/tutorials/quick-start/
+
+    You can also use a URI connection string:
+    client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
+
+--
