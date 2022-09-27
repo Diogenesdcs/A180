@@ -5,33 +5,27 @@ Funcionalidade: Cadastro
     Quero fazer o meu cadastro no Rocklov
     Para que eu possa disponbizá-los para locação.
 
-    @cadastro  
+    @cadastro
     Cenario: Fazer cadastro
         Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro completo
+        Quando submeto o formulário de cadastro:
+            #data table cucumber
+            | nome     | email                      | senha |
+            | Diógenes | diogenes-email@hotmail.com | 123   |
         Então sou redirecionado para o Dashboard
-        
-    @tentativa_cadastro
-    Cenario: Submeter o cadastro sem o nome
+
+    Esquema do Cenário: Tentativa de Cadastro
+
         Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro sem o nome
-        Então vejo a mensagem de alerta: "Oops. Informe seu nome completo!"
-    
-    @tentativa_cadastro
-    Cenario: Submeter  cadastro sem o email
-        Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro sem o email
-        Então vejo a mensagem de alerta: "Oops. Informe um email válido!"
-    
-    @tentativa_cadastro
-    Cenario: Submeter  cadastro com email incorreto
-        Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro com email incorreto
-        Então vejo a mensagem de alerta: "Oops. Informe um email válido!"
-   
-    @tentativa_cadastro
-    Cenario: Submeter  cadastro sem a senha
-        Dado que acesso a página de cadastro
-        Quando submeto o meu cadastro sem a senha
-        Então vejo a mensagem de alerta: "Oops. Informe sua senha secreta!"
-        
+        Quando submeto o formulário de cadastro:
+                            #placeholders
+            |nome         |email         |senha         |
+            |<nome_input> |<email_input> |<senha_input> |
+        Então vejo a mensagem de alerta: "<mensagem_output>"
+                            #matriz
+        Exemplos:  
+        | nome_input | email_input                |senha_input | mensagem_output                 |
+        |            | diogenes-email@hotmail.com | 123        |Oops. Informe seu nome completo! |
+        | Diógenes   |                            | 123        |Oops. Informe um email válido!   |
+        | Diógenes   | diogenes-email*hotmail.com | 123        |Oops. Informe um email válido!   |
+        | Diógenes   | diogenes-email@hotmail.com |            |Oops. Informe sua senha secreta! |

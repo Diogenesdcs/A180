@@ -1,7 +1,7 @@
 Gemfile: arquivo para configuração do pj aplicações
 Gem: frameworks e versões.
 env.rb: importação dos módulos dos frameworks e bibliotecas para o projeto.
-Rspec: linguagem de programação Ruby para testar o código Rub
+Rspec: linguagem de programação Ruby para testar o código Ruby
 Faker: Gerador de massa de dados faker. para acessar informações das bibliotecas gems ruby faker
 clicar area de links home page -> https://github.com/faker-ruby/faker generator ->default . não esquecer de importar 
 dentro do arquivo env.rb
@@ -18,3 +18,13 @@ Pasta Libs: usada para classes criadas no projeto.
     client = Mongo::Client.new('mongodb://127.0.0.1:27017/test')
 --
 Argumentos do cucumber
+Separados pelo aspas duplas "Oops. Informe"
+--
+cucumber data table
+|nome       |email                     |senha|
+|Diógenes   |diogenes-email@hotmail.com|123  |
+--
+Esquema de cenário: é uma matriz do cucumber para melhor utilizar 
+nas massas de testes repetitivos.
+
+
