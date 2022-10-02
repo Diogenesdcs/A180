@@ -1,0 +1,39 @@
+
+    @login
+    Cenario: Login do usúario
+
+        Dado que acesso a pagina principal
+        Quando submeto minhas credenciais "diogenes@yahoo.com" e "123"
+        #se for acima de 3 massas de dados criar um datatable
+        Então sou redirecionado para o Dashboard
+
+    Cenario: Senha incorreta
+
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais com senha incorreta
+        Então vejo a mensagem de alerta: Usuário e/ou senha inválidos.
+
+    Cenario: Email não cadastrado
+
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais com email que não existe na Rocklov
+        Então vejo a mensagem de alerta: Usuário e/ou senha inválidos.
+
+    Cenario: Email incorreto
+
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais com email incorreto
+        Então vejo a mensagem de alerta: Oops. Informe um email válido!
+
+
+    Cenario: Email não informado
+
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais sem o email
+        Então vejo a mensagem de alerta: Oops. Informe um email válido!
+
+    Cenario: Senha não informada
+
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais sem a senha
+        Então vejo a mensagem de alerta: Oops. Oops. Informe sua senha secreta!

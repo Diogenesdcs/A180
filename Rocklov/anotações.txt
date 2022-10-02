@@ -19,12 +19,24 @@ Pasta Libs: usada para classes criadas no projeto.
 --
 Argumentos do cucumber
 Separados pelo aspas duplas "Oops. Informe"
---
+--------------------------
 cucumber data table
 |nome       |email                     |senha|
 |Diógenes   |diogenes-email@hotmail.com|123  |
---
+--------------------------
 Esquema de cenário: é uma matriz do cucumber para melhor utilizar 
 nas massas de testes repetitivos.
+
+Esquema do Cenário: Tentativas de login
+        Dado que acesso a página principal
+        Quando submeto minhas credenciais com "<email_input>" e "<senha_input>"
+        Então vejo a mensagem de alerta: "<mensagem_output>"
+
+        Exemplos:
+            | email_input        | senha_input | mensagem_output                        |
+            | diogenes@yahoo.com | 1234        | Usuário e/ou senha inválidos.          |
+
+--------------------------
+
 
 

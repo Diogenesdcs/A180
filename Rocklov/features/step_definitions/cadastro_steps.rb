@@ -14,16 +14,17 @@ Dado('que acesso a página de cadastro') do
   
     click_button "Cadastrar"
   end
-   
-  Então('sou redirecionado para o Dashboard') do #espero que na pagina atual contenha .dashboard
-      expect(page).to have_css ".dashboard"
-  end
 
-  Então('vejo a mensagem de alerta: {string}') do |mensagem_alerta|
-    alert = find(".alert-dark")
-    expect(alert.text).to eql mensagem_alerta
-  end
-  
+  # Então('sou redirecionado para o Dashboard') do #espero que na pagina atual contenha .dashboard
+  #     expect(page).to have_css ".dashboard"
+  # end
+
+  # Então('vejo a mensagem de alerta: {string}') do |mensagem_alerta|
+  #   alert = find(".alert-dark")
+  #   expect(alert.text).to eql mensagem_alerta
+  # end
+
+
   # formato de cadastro sem datatable
   # Quando('submeto o meu cadastro completo') do #preencho o cadastro
   #   MongoDB.new.remove_user("diogenes-email@hotmail.com") #chamo a classe e aciona o metodo da classe dentro do arquivo mongo.rb
