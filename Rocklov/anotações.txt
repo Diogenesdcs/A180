@@ -38,5 +38,13 @@ Esquema do Cenário: Tentativas de login
 
 --------------------------
 
+Configurando config.app_host = "http://rocklov-web:3000"
+dentro do arquivo env.rb para criar rotas de endereços.
+
+--------------------------
+cadastro anuncio parte 3
+falta descobrir o comando para divulgar o css invisivel 
+
+
 
 

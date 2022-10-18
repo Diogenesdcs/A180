@@ -1,5 +1,5 @@
 Dado('que acesso a pagina principal') do
-  visit "http://rocklov-web:3000"
+  visit "/" #endereço no env.rb
 end
   
 

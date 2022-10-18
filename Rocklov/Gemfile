@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 #lista das aplicações instaladas no pj
 gem 'cucumber', '5.2'
-gem 'capybara', '3.33'
-gem 'selenium-webdriver', '3.142.7'
-gem 'rspec', '3.10'
+gem 'capybara', '3.33' 
+gem 'selenium-webdriver', '3.142.7' #emulador de navegador
+gem 'rspec', '3.10'  #faz a inspeção de text no pj
 gem 'faker', '2.14'  #gerador de massa de dados faker
 gem 'mongo', '2.13.1'  #conexão com o banco mongodb

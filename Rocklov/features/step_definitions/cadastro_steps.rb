@@ -1,5 +1,5 @@
 Dado('que acesso a página de cadastro') do
-  visit "http://rocklov-web:3000/signup" #acesso a página
+  visit "signup" #acesso a página config do app host no arquivo env.r
   end
   
   Quando('submeto o formulário de cadastro:') do |table|
