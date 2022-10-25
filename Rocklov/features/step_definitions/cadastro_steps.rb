@@ -8,7 +8,7 @@ Dado('que acesso a página de cadastro') do
     
     MongoDB.new.remove_user(user[:email]) #chamo a classe e aciona o metodo da classe dentro do arquivo mongo.rb
     
-    find("#fullName").set user[:nome] # # faz a busca e chama o Css do campo nome, depois seta
+    find("#fullName").set user[:nome] # # faz a busca e chama o Css do campo nome, depois insere a variavel
     find("#email").set user[:email] # a variavel user nos campos nome email e senha da tabela do bdd.
     find("#password").set user[:senha]
   

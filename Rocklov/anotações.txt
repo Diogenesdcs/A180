@@ -7,6 +7,11 @@ clicar area de links home page -> https://github.com/faker-ruby/faker generator 
 dentro do arquivo env.rb
 Mongo: banco de dados 
 Pasta Libs: usada para classes criadas no projeto.
+Pasta logs: para guardar os logs do pj.
+Pasta refacturing: pasta de arquivos refaturados da automação.
+Pasta specs: utilizadas para as feature do cucumber bdd.
+Pasta step_definitions: utilizadas para colocar os códigos da automação.
+
 
 --Instalando banco de dados robo 3t
 	baixar a versão free e instalar a mesma porta de servidor e banco de dados do servidor virtual.
@@ -42,8 +47,8 @@ Configurando config.app_host = "http://rocklov-web:3000"
 dentro do arquivo env.rb para criar rotas de endereços.
 
 --------------------------
-cadastro anuncio parte 3
-falta descobrir o comando para divulgar o css invisivel 
+
+
 
 
 

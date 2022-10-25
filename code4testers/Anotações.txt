@@ -7,7 +7,11 @@ métodos
 são procedimento criados para instruções da linguagem.
 Argumentos: Um argumento representa o valor que você passa para um parâmetro de procedimento, quando você chama o procedimento
 
-Classe:Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto
+Classe:Uma classe é uma forma de definir um tipo de dado em uma linguagem orientada a objeto.
+classes É um objeto que tem caracterisiticas e funções
+Exemplos: 
+caracteristicas: Nome, marca, modelo, cor .
+funções: Ligar, buzinar, parar.
 
 -----------------------
 Operadores Parte 2
@@ -34,10 +38,11 @@ hashes = guarda estrutras de armazenamento associativos com conjuntos de dados e
 -------------------------
 Loops Times
 Loops each
-
-
 ----------------------------------------
 html
 -------------------------
 Framework java script: br.vuejs.org
+
+----------------------------------------
+
 

@@ -11,7 +11,7 @@ Funcionalidade: Cadastro de Anúncios
             E que acesso o formulario cadastro de anúncio
             #tabela com chave e valor.
             E que eu tenho o seguinte equipamento:
-            | thunb     | fender-sb     |
+            | thunb     | fender-sb.jpg |
             | nome      | Fender Strato |
             | categoria | Cordas        |
             | preco     | 200           |
