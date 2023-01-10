@@ -6,4 +6,5 @@ require "faker"             #importação da biblioteca para o pj
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome
     config.app_host = "http://rocklov-web:3000"  #aplicando o host com o endereço do site
+    config.default_max_time = 5                  #tempo de espera por tela 
 end

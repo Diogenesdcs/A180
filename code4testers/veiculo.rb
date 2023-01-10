@@ -5,12 +5,12 @@
 class Veiculo
     attr_accessor :nome, :cor, :marca #caracteristicas da classe
 
-    def initialize(nome) #metodo de inicialização do argumento nome 
+    def initialize(nome) #metodo de inicialização do argumento nome obrigando a passar o parametor de nome 
         @nome = nome
     end
 end
 
-class Carro < Veiculo #herança de classes
+class Carro < Veiculo #herança de classes herdando propriedades da classe veiculo
     def ligar #função metodo da classe
         puts "O #{@nome} está pronto para iniciar o trajeto."
     end

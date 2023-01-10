@@ -56,7 +56,7 @@ Quando('submeto o meu cadastro com email incorreto') do
   click_button "Cadastrar"
 end
 
-
+Argumento com utilização de massa de dados faker
 Quando('submeto o meu cadastro sem a senha') do
   find("#fullName").set "Diógenes"# #para chamar o Css do campo
   find("#email").set Faker::Internet.free_email 
