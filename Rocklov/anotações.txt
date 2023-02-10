@@ -5,13 +5,17 @@ Rspec: linguagem de programação Ruby para testar o código Ruby
 Faker: Gerador de massa de dados faker. para acessar informações das bibliotecas gems ruby faker
 clicar area de links home page -> https://github.com/faker-ruby/faker generator ->default . não esquecer de importar 
 dentro do arquivo env.rb
-Mongo: banco de dados 
+Mongo: banco de dados
+pageobjects: para encapsulamento de de classes e metodos. 
 Pasta Libs: usada para classes criadas no projeto.
 Pasta logs: para guardar os logs do pj.
 Pasta refacturing: pasta de arquivos refaturados da automação.
 Pasta specs: utilizadas para as feature do cucumber bdd.
 Pasta step_definitions: utilizadas para colocar os códigos da automação.
-
+Pasta Pages: utilizadas para page objects e configurações de encapsulamento. support > pages > login-page.
+Pasta views: fica guardado as pageobjects e os componentes de steps.
+App actions: encapsulamento de pageobjects para melhorar o funcionamento.
+hooks: para instanciar método before metodo utilizado para gravar na mémoria de cada chamada do ruby executa antes.
 
 --Instalando banco de dados robo 3t
 	baixar a versão free e instalar a mesma porta de servidor e banco de dados do servidor virtual.
@@ -50,6 +54,34 @@ dentro do arquivo env.rb para criar rotas de endereços.
 
 Automação front end
 
+pageobjects
+#pageobjects
+class LoginPage #classes
+include Capybara:: DSL #para incluir o visit
+    #metodos
+    def abrir
+    visit "/" #endereço no env.rb
+    end
+
+    def campo_email
+        return find("input[placeholder='Seu email']")
+    end
+
+    def campo_senha
+    return find("input[placeholder='Sua senha secreta']")
+    end
+
+    def botao_entrar
+        return click_button "Entrar"
+    end
+end
 
 
+ login_page = LoginPage.new 
+    login_page.abrir
+    login_page.campo_email.set email
+    login_page.campo_senha.set senha
+    login_page.botao_entrar
+
+---------------------------------------------
 

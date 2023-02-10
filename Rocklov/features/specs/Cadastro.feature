@@ -13,7 +13,8 @@ Funcionalidade: Cadastro
             | nome     | email                      | senha |
             | Diógenes | diogenes-email@hotmail.com | 123   |
         Então sou redirecionado para o Dashboard
-
+        
+    @tentativa_cadastro
     Esquema do Cenário: Tentativa de Cadastro
 
         Dado que acesso a página de cadastro

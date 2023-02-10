@@ -1,5 +1,6 @@
 Dado('que acesso a página de cadastro') do
-  visit "signup" #acesso a página config do app host no arquivo env.r
+    @signup_page.open 
+    # visit "signup" #acesso a página config do app host no arquivo env.rb
   end
   
   Quando('submeto o formulário de cadastro:') do |table|
@@ -7,12 +8,11 @@ Dado('que acesso a página de cadastro') do
     user = table.hashes.first #variavel user recebe table do bdd e transforma em array.
     
     MongoDB.new.remove_user(user[:email]) #chamo a classe e aciona o metodo da classe dentro do arquivo mongo.rb
-    
-    find("#fullName").set user[:nome] # # faz a busca e chama o Css do campo nome, depois insere a variavel
-    find("#email").set user[:email] # a variavel user nos campos nome email e senha da tabela do bdd.
-    find("#password").set user[:senha]
-  
-    click_button "Cadastrar"
+    @signup_page.create(user)
+    # find("#fullName").set user[:nome] # # faz a busca e chama o Css do campo nome, depois insere a variavel
+    # find("#email").set user[:email] # a variavel user nos campos nome email e senha da tabela do bdd.
+    # find("#password").set user[:senha]  
+    #click_button "Cadastrar"
   end
 
   # Então('sou redirecionado para o Dashboard') do #espero que na pagina atual contenha .dashboard

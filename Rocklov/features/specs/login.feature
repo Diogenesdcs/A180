@@ -1,5 +1,5 @@
 #language: pt
-@login
+#@login
 Funcionalidade: Login
     Sendo um usúario cadastrado
     Quero acessar o sistema da Rocklov
@@ -9,7 +9,7 @@ Funcionalidade: Login
     Cenario: Login do usúario
 
         Dado que acesso a pagina principal
-        Quando submeto minhas credenciais "diogenes@yahoo.com" e "123"
+        Quando submeto minhas credenciais "diogenes-email@hotmail.com" e "123"
         #se for acima de 3 massas de dados criar um datatable
         Então sou redirecionado para o Dashboard
 
