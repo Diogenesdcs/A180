@@ -8,3 +8,5 @@ gem 'selenium-webdriver', '3.142.7' #emulador de navegador
 gem 'rspec', '3.10'  #faz a inspeção de text no pj
 gem 'faker', '2.14'  #gerador de massa de dados faker
 gem 'mongo', '2.13.1'  #conexão com o banco mongodb
+gem 'allure-cucumber', '2.19'
+

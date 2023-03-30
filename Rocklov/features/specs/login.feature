@@ -1,11 +1,10 @@
 #language: pt
-#@login
+@login
 Funcionalidade: Login
     Sendo um usúario cadastrado
     Quero acessar o sistema da Rocklov
     Para que eu possa anunciar meus equipamentos musicais
 
-    @login
     Cenario: Login do usúario
 
         Dado que acesso a pagina principal
@@ -14,10 +13,10 @@ Funcionalidade: Login
         Então sou redirecionado para o Dashboard
 
     Esquema do Cenário: tentativas
-
+        #rodar cadastro primeiro.
         Dado que acesso a pagina principal
         Quando submeto minhas credenciais "<input_email>" e "<input_senha>"
-        Então vejo a mensagem de alerta: "<mensagem_output>"
+        Então vejo a mensagem de alerta: "<mensagem_output>"        
 
         Exemplos:
             | input_email        | input_senha | mensagem_output                  |

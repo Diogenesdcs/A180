@@ -13,9 +13,17 @@ Pasta refacturing: pasta de arquivos refaturados da automação.
 Pasta specs: utilizadas para as feature do cucumber bdd.
 Pasta step_definitions: utilizadas para colocar os códigos da automação.
 Pasta Pages: utilizadas para page objects e configurações de encapsulamento. support > pages > login-page.
+fluxo das pages. cria o metodo page depois instância o metodo e depois chama dentro das steps do código atraves do método.
 Pasta views: fica guardado as pageobjects e os componentes de steps.
+Pasta config: para configuração de ambientes locais e testes
 App actions: encapsulamento de pageobjects para melhorar o funcionamento.
 hooks: para instanciar método before metodo utilizado para gravar na mémoria de cada chamada do ruby executa antes.
+Arquivo cucumber.yml para configurar saidas outputs do cucumber. profiles e criar variaveis de navegadoress
+scoop instalador power shell
+Allure: servidor de relatorios de logs
+comando para habilitar o allure: executar dentro da pasta rocklov 'allure serve logs\'
+
+
 
 --Instalando banco de dados robo 3t
 	baixar a versão free e instalar a mesma porta de servidor e banco de dados do servidor virtual.
@@ -29,12 +37,14 @@ hooks: para instanciar método before metodo utilizado para gravar na mémoria d
 Argumentos do cucumber
 Separados pelo aspas duplas "Oops. Informe"
 --------------------------
-cucumber data table
+cucumber data table com input de dados e referente a tabela.
 |nome       |email                     |senha|
 |Diógenes   |diogenes-email@hotmail.com|123  |
+
 --------------------------
 Esquema de cenário: é uma matriz do cucumber para melhor utilizar 
 nas massas de testes repetitivos.
+Todo Esquema de cenário tem que ter os placeholder de input e os a matriz de exemplos embaixo.
 
 Esquema do Cenário: Tentativas de login
         Dado que acesso a página principal
@@ -84,4 +94,8 @@ end
     login_page.botao_entrar
 
 ---------------------------------------------
+Principais tópicos
+- Expressões condicionais
+- have_text do Capybara para verificar se contem um texto em uma string
+- Encapsulamento de ações
 

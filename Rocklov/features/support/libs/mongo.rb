@@ -6,7 +6,7 @@ class MongoDB #classe
     attr_accessor :users, :equipos
 
     def initialize
-        client = Mongo::Client.new('mongodb://rocklov-db:27017/rocklov') #comando para acessar banco de dados usando o nome e a porta.
+        client = Mongo::Client.new(CONFIG["mongo"]) #comando para acessar banco de dados usando o nome e a porta.
         @users = client[:users] #Para acessar uma coleção, consulte-a pelo nome dentro do banco.
         @equipos = client[:equipos] #Para acessar uma coleção, consulte-a pelo nome dentro do banco.
     end

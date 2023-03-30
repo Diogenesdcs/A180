@@ -1,0 +1,3 @@
+---
+url: http://rocklov-web:3000 #ambiente local
+mongo: mongodb://rocklov-db:27017/rocklov #banco de dados local

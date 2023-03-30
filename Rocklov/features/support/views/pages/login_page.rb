@@ -11,7 +11,7 @@ class LoginPage #classes
      find("input[placeholder='Seu email']").set email
      find("input[placeholder='Sua senha secreta']").set senha
      click_button "Entrar"
-     end
+end
 
     # def campo_email
     #   return find("input[placeholder='Seu email']")

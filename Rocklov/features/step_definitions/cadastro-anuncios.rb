@@ -1,14 +1,13 @@
 
-Dado('que estou logado como {string} e {string}') do |email, senha|
+Dado('Login com {string} e {string}') do |email, senha|
     @email = email    
     @login_page = LoginPage.new 
     @login_page.open
     @login_page.with(email, senha)
 end
-  
+
 Dado('que acesso o formulario cadastro de anúncio') do
-    @dashPage.goto_equipo_form
- 
+    @dash_page.goto_equipo_form
 end
 
 Dado('que eu tenho o seguinte equipamento:') do |table|
@@ -22,13 +21,17 @@ end
 # - Upload
 # - Como buscar elementos ocultos
 Quando('submeto o cadastro desse item') do
-#page equipos_page metodo create que recebe @anuncio.
+    #page equipos_page metodo create que recebe @anuncio.
     @equipos_page.create(@anuncio)
 end
  
 #Validando valores na página com have_content do Capybara
 Então('devo ver esse item no menu Dashboard') do
     #page dash_page metodo equipolist que contenham no  @anuncio.
-    expect(@dash_Page.equipo_list).to have_content @anuncio[:nome]
+    expect(@dash_page.equipo_list).to have_content @anuncio[:nome]
     #expect(anuncios).to have_content "R$200/dia"
+end
+
+Então('deve conter a mensagem de alerta: {string}') do |mensagem_alerta|
+    expect(@alert.dark).to have_text mensagem_alerta #espero que na pagina atual contenha o a mensagem alerta.
 end

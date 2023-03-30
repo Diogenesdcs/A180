@@ -2,9 +2,9 @@
 class DashPage
     include Capybara::DSL
 
-    #retorna verdadeiro ou falso 
+    #retorna verdadeiro ou falso porcausa do ponto de interrogação.
     def on_dash?
-        page.hash_css?(".dashboard")
+        return page.has_css?(".dashboard")
     end
 
     def goto_equipo_form

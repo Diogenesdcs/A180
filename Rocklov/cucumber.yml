@@ -1,0 +1,12 @@
+---
+default: --publish-quiet -p allure -p bdd -p local -p fire_headless #para desabilitar o relatório na nuvem. public da saída em bdd 
+bdd: -f pretty
+dots: -f progress
+html: -f html -o logs/reports.html #para adicionar na pasta logs em formato html
+allure: --format AllureCucumber::CucumberFormatter --Out=logs
+local: CONFIG=local.yml #configuração de ambientes local e hml vindos do arquivo yml
+hml: CONFIG=hml.yml
+firefox: BROWSER=firefox #cria variavel firefox e recebe do browser firefox
+fire_headless: BROWSER=fire_headless
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
